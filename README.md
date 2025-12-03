@@ -4,7 +4,7 @@ The script scans only the items created in MyGlue and shares them with the IT Gl
 
 Prerequisites:
 
-1. An Editor-level user who has access to all shared MyGlue data
+1. An Editor-level user who has access to all/majority of shared MyGlue data
 2. The ID of the IT Glue group visible to MyGlue users (**recommended: create a group such as “MyGlue Data”**)
     <img width="707" height="765" alt="image" src="https://github.com/user-attachments/assets/b512df03-9eda-435b-9ac7-6ce0830474f4" />
 3. Access to PowerShell ISE to run the script
