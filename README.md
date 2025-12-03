@@ -13,7 +13,7 @@ Prerequisites:
 When you run the script, you will be prompted to enter your MyGlue credentials. If you use MFA to log in, provide the MFA code when prompted, or simply press **Enter** to bypass if applicable. Once authentication is successful, the script will begin scanning core assets first, followed by flexible assets.
 
 The script will add a note to Contacts, Configurations, Locations, and Passwords.
-**Note:** Existing notes will be replaced with *“This is a MyGlue record.”*
+**Note:** Existing notes will be replaced with *“This is a MyGlue record. Alternatively you can use another script, to prevent any data lose from the notes section. This script will add all the assets to the CSV file and only update Documents, Document folder and password folder name. Direct_URL”*
 For Documents, *(MyGlue Data)* will be appended to the document name.
 
 Due to API limitations for Domains, SSL Certificates, and Flexible Assets, the script will generate a CSV file containing these records. This allows you to identify which items originate from MyGlue even if the script cannot update them directly. Please refer to the example shown below.
