@@ -12,11 +12,6 @@ Prerequisites:
 
 When you run the script, you will be prompted to enter your MyGlue credentials. If you use MFA to log in, provide the MFA code when prompted, or simply press **Enter** to bypass if applicable. Once authentication is successful, the script will begin scanning core assets first, followed by flexible assets.
 
-The script will add a note to Contacts, Configurations, Locations, and Passwords.
-
-**Note:** **Existing notes will be replaced with (This is a MyGlue record). Alternatively you can use another script, to prevent any data lose from the notes section. This script will add all the assets to the CSV file and only update Documents, Document folder and password folder name. Direct_URL**
-For Documents, *(MyGlue Data)* will be appended to the document name.
-
 Due to API limitations for Domains, SSL Certificates, and Flexible Assets, the script will generate a CSV file containing these records. This allows you to identify which items originate from MyGlue even if the script cannot update them directly. Please refer to the example shown below.
 
 <img width="1116" height="527" alt="image" src="https://github.com/user-attachments/assets/642baa0d-96ad-41fb-bb19-806db509625d" />
@@ -28,4 +23,11 @@ If you see any entries marked **false**, review the corresponding data in MyGlue
 
 **Note:** **This script does **not** update security permissions for MyGlue personal passwords. Users will still need to log in and export personal password data manually**.
 
+**Security update behaviour**
+
+1. If the asset permission is set to All MyGlue user with access to this organization, this script will update the permission to specific users and group and add Editor user used in the script and IT Glue Group
+2. If the permission is already set to assign users and groups then script will only add the IT Glue groups without updating the existing groups.
+
 We welcome any recommendations to improve the script. Thank you for your support!
+
+
